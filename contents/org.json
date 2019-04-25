@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "type": "reg",
+      "date": "Oct 2018 - Present",
+      "description": {
+        "what": "Triton Gaming",
+        "emphasis": "Event Coordinator",
+        "info": "Organized gaming live events from conception to completion; arranged stage and program schedules, assisted in creating general floor plans, organized funding for events, and etc."
+      }
+    },
+    {
+      "type": "reg",
+      "date": "Oct 2018 - Present",
+      "description": {
+        "what": "League of Tritons",
+        "emphasis": "Logistics Director",
+        "info": "Oversaw the logistics of the organization and assisted in stimulating the community by holding in house events, generating posts on social media, and etc."
+      }
+    }
+  ]
+}

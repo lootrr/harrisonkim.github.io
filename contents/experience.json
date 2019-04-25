@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "type": "reg",
+      "date": "Mar 2019 -  Present",
+      "description": {
+        "what": "Language Comprehension Lab",
+        "emphasis": "Research Assistant",
+        "info": "Conducted and designed online experiments in JavaScript using the jsPsych library."
+      }
+    },
+
+    {
+      "type": "reg",
+      "date": "Aug 2018 - Sep 2018",
+      "description": {
+        "what": "Korea Daily",
+        "emphasis": "Software Engineering Intern",
+        "info": "Worked on the Web Development team, creating internal tools that helped assist with testing environment."
+      }
+    }
+  ]
+}
