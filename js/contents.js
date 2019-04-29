@@ -1,3 +1,14 @@
+// get all the contents infomation 
+(function () {
+  window.addEventListener('load', function() {
+    experience();
+    org();
+    expandGroups('click');
+    expandGroups('touchend');
+  }, false);
+})();
+
+
 // build headers for requests
 function buildHeader() {
   var head = new Headers();
@@ -9,6 +20,19 @@ function buildHeader() {
     headers: head
   };
   return init;
+}
+
+function pullExp() {
+  return fetch('contents/experience.json', buildHeader()).then(function(response) {
+    return response.json();
+  });
+}
+
+// pull organizations links
+function pullOrg() {
+  return fetch('contents/org.json', buildHeader()).then(function(response) {
+    return response.json();
+  });
 }
 
 function expandGroups(event) {
@@ -26,23 +50,10 @@ function expandGroups(event) {
   });
 }
 
-// pull highlights content
-function pullHighlights() {
-  return fetch('contents/experience.json', buildHeader()).then(function(response) {
-    return response.json();
-  });
-}
 
-// pull organizations links
-function pullOrg() {
-  return fetch('contents/org.json', buildHeader()).then(function(response) {
-    return response.json();
-  });
-}
-
-function highlights() {
+function experience() {
   var h = document.getElementById('highlights');
-  pullHighlights().then(function(r) {
+  pullExp().then(function(r) {
     document.getElementsByClassName('loading')[0].classList.add('hide');
     r.data.forEach(function (x) {
       h.innerHTML += '<li class="' + x.type +
@@ -69,12 +80,3 @@ function org() {
   });
 }
 
-// get all the contents infomation 
-(function () {
-  window.addEventListener('load', function() {
-    highlights();
-    org();
-    expandGroups('click');
-    expandGroups('touchend');
-  }, false);
-})();
