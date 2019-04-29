@@ -52,7 +52,7 @@ function expandGroups(event) {
 
 
 function experience() {
-  var h = document.getElementById('highlights');
+  var h = document.getElementById('experience');
   pullExp().then(function(r) {
     document.getElementsByClassName('loading')[0].classList.add('hide');
     r.data.forEach(function (x) {
