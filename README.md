@@ -1,4 +1,4 @@
-# harrisonekim.me
+# harrisonkim.me
 
 A git repo containing my personal website!
 
