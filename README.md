@@ -11,7 +11,7 @@ git clone https://github.com/lootrr/harrisonkim.github.io
 
 ## Usage
 
-view the website [here](http://harrisonkim.me/) 
+View the website [here](http://harrisonkim.me/) 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
