@@ -1,6 +1,6 @@
 # harrisonkim.me
 
-A git repo containing my personal website!
+A git repo containing my personal website! I used the fetch api so that I could make maintaining the website easier! 
 
 ## Installation
 
